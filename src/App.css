@@ -1,0 +1,451 @@
+/* App CSS */
+body a {
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+input {
+  color: #8e979f;
+}
+
+/* Navbar */
+nav {
+  background-color: #ffffff !important;
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar-brand {
+  color: black;
+  font-weight: 700;
+}
+.nav-link {
+  color: #115779;
+}
+.signUpBtn {
+  border-radius: 4px;
+  padding: 10px;
+  border: 0.5px solid #115779;
+  background-color: #ffffff;
+}
+.loginBtn {
+  border-radius: 4px;
+  padding: 10px;
+  background-color: #115779;
+  color: #ffffff;
+  border: none;
+}
+
+/* Logout Button (Initially hidden) */
+.logoutBtn.visible {
+  display: block !important; /* Override the display: none; */
+}
+.logoutBtn {
+  border-radius: 4px;
+  padding: 10px;
+  background-color: #115779; /* Bootstrap's danger color */
+  color: #ffffff;
+  border: none;
+  display: none; /* Hidden by default */
+}
+.logoutBtn:hover {
+  background-color: #156993;
+}
+.dropdownFlight {
+  width: fit-content !important;
+  padding: 12px;
+  border: none;
+}
+.dropdownFlight .dropdown-item {
+  color: #115779;
+}
+.dropdownFlight .dropdown-item:hover {
+  background-color: #115779;
+  color: white;
+}
+/* End of Navbar */
+
+/* Sign up Modal */
+.suffixGroup {
+  position: relative;
+}
+.suffixLabel {
+  position: absolute;
+  left: 25px;
+  font-size: 12px;
+}
+#suffix {
+  padding-top: 12px;
+  padding-bottom: 0;
+}
+
+.signupSubmit {
+  height: 50px;
+  width: 150px;
+  border-radius: 99px;
+  background-color: #115779;
+  color: #ffffff;
+  font-weight: 700;
+  border: none;
+}
+.signupSubmit:hover {
+  background-color: #ffffff;
+  border: 2px solid #115779;
+  color: #115779;
+}
+/* End of Sign up Modal */
+
+/* Login dropdown */
+.dropdown-menu {
+  width: 350px;
+}
+.logInSubmitBtn {
+  background-color: #115779;
+  color: #ffffff;
+  font-weight: 700;
+}
+.logInSubmitBtn:hover {
+  background-color: transparent;
+  color: #115779;
+  border: 1px solid #115779;
+}
+.forgotPassword {
+  color: #115779;
+  font-size: 14px;
+}
+
+.no-arrow::after {
+  display: none;
+}
+
+/* Carousel */
+#myCarousel {
+  padding-top: 60px;
+}
+.carousel-item > img {
+  object-fit: cover;
+  overflow: hidden;
+  max-width: 100%;
+  max-height: 100vh;
+}
+/* End of Carousel */
+
+/* Search Flights */
+#search-flights-btn,
+#search-flights-form {
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
+  transform: translateY(-300px);
+}
+
+#search-flights-btn ul {
+  text-align: center;
+  position: relative;
+  display: inline-block;
+}
+
+#search-flights-btn li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 35px;
+}
+
+#search-flights-btn a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #115779;
+}
+
+.bottom__line {
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 50%;
+  height: 2px;
+  background-color: #115779;
+}
+
+.bottom__active {
+  transform: translate3d(0%, 0, 0);
+  transition: all linear 240ms;
+}
+
+.bottom__active1 {
+  transform: translate3d(100%, 0, 0);
+  transition: all linear 240ms;
+}
+
+.color {
+  color: #115779;
+  transition: all linear 100ms;
+}
+
+.color1 {
+  color: #115779;
+  transition: all linear 100ms;
+}
+
+.form-check-input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.form-check-label {
+  position: relative;
+  display: inline-block;
+  padding-left: 30px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.form-check-label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border: 2px solid #115779;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.form-check-input:checked + .form-check-label::before {
+  background-color: #fff;
+  border-color: #115779;
+}
+
+.form-check-label::after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 50%;
+  width: 12px;
+  height: 12px;
+  background-color: #115779;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Show inner dot when checked */
+.form-check-input:checked + .form-check-label::after {
+  opacity: 1;
+}
+
+#search-flights-form {
+  box-shadow: 0 15px 15px 0 #b1b8be3a;
+  transform: translateY(-303px);
+  width: 80%;
+  height: 100%;
+}
+
+#search-flights-form form {
+  width: 90%;
+}
+
+#specificSizeSelect,
+#datePicker {
+  height: 60px;
+}
+
+#search-flights-form form button {
+  background-color: #115779;
+  height: 45px;
+}
+/* End of Search Flights */
+
+/* Manage Booking Section */
+#manage-booking {
+  transform: translateY(-150px);
+  width: 80%;
+  border: 1px solid lightgray;
+  border-radius: 0.5rem;
+  box-shadow: 0 15px 15px 0 #b1b8be3a;
+}
+#manage-booking li[class="nav-item"] {
+  width: 33.33%;
+}
+#checkin-tab,
+#manage-tab,
+#status-tab {
+  width: 100%;
+}
+#manage-booking p,
+label[for="termsAndConditions"] {
+  font-size: 0.9rem;
+}
+#manage-booking .form-check button {
+  background-color: #115779;
+  height: 45px;
+  width: 120px;
+}
+/* End of Manage Booking Section */
+
+/* Deals Section  */
+#deals .tour-package,
+.travel-guide {
+  font-size: 2.5rem;
+}
+#deals .card {
+  border: none;
+}
+
+#deals img {
+  height: 300px;
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+#deals .card-body button {
+  background-color: #fff;
+  padding: 2px 10px;
+  border: 1px solid #115779;
+}
+#deals .days {
+  font-size: 0.8rem;
+}
+.card-text i {
+  color: #edd317;
+}
+/* End of Deals Section  */
+
+/* Explore Section */
+#explore .popular {
+  font-size: 2.5rem;
+}
+#explore .card,
+#travel-guide-grid .card {
+  object-fit: contain;
+  border: 0px;
+}
+#explore .popular-grid .card:hover {
+  box-shadow: 0 10px 20px 0 lightgray;
+}
+
+.guide-p {
+  max-width: 75ch;
+  font-size: 1.2em;
+}
+/* End of Explore Section */
+
+/* About Us Section */
+#feature {
+  margin-top: 100px !important;
+}
+.feature-us {
+  font-size: 2.5rem;
+}
+#feature .row > .col {
+  box-shadow: 0 0 20px 0 #b1b8be3a;
+  padding: 20px;
+}
+#feature img {
+  padding: 0 10px;
+}
+/* End of About Us Section */
+
+/* Footer */
+.footer {
+  background-color: #115779;
+  color: white;
+}
+.footer h5 {
+  color: #d99528;
+}
+.ftdiv {
+  border-color: white;
+}
+.footer i {
+  color: #fff;
+}
+/* End of Footer */
+
+/* Payment Form */
+/* Styles specific to the PaymentForm component */
+.payment-form__input-group {
+  margin-bottom: 15px;
+}
+
+.payment-form__input-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.payment-form__input-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.payment-form__submit-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.payment-form__submit-btn:hover {
+  background-color: #0056b3;
+}
+
+/* End of Payment Form */
+
+/* Scrollbar Styles for WebKit Browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 8px; /* Width of the vertical scrollbar */
+  height: 8px; /* Height of the horizontal scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #115779; /* Color of the scrollbar handle */
+  border-radius: 4px; /* Rounded corners for the scrollbar handle */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #115779; /* Color of the scrollbar handle when hovered */
+}
+
+/* Scrollbar Styles for Firefox */
+* {
+  scrollbar-width: thin; /* Thin scrollbar width */
+  scrollbar-color: #115779 #f1f1f1; /* Scrollbar handle color and track color */
+}
+/* End of Scrollbar Style */
+
+/* Media Queries for small, medium and large Screen */
+@media (max-width: 576px) {
+  .dropdown-menu {
+    right: 0;
+  }
+  /* Search Flights */
+  #search-flights-form {
+    height: 100%;
+  }
+  /* End of Search Flights */
+}
+@media (min-width: 768px) {
+  .modal-dialog.modal-xl {
+    max-width: 768px;
+  }
+}
+@media (min-width: 1200px) {
+  /* Media query for Sign up modal */
+  .modal-dialog.modal-xl {
+    max-width: 1140px;
+  }
+}

@@ -1,0 +1,248 @@
+/*CSS Reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: #f9f9f9;
+}
+.cardHighlight {
+  min-height: 100%;
+}
+
+/* About Section Styles */
+.intro {
+  margin-top: 50px;
+}
+
+.about-img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto;
+  display: block;
+}
+
+#carouselExample {
+  width: 100%;
+  height: 400px;
+}
+
+.carousel-inner {
+  height: 100%;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-controls {
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: auto;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Flight View */
+.flightsWrapper {
+  border-top: 8px solid #115779 !important;
+  border-bottom: 8px solid #115779;
+  padding: 10px 0;
+  margin: 10px 0;
+  border-radius: 8px;
+  background-color: #fff;
+}
+.flightsCard {
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+  justify-content: center;
+  align-items: center;
+}
+.flightsCard:hover {
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.price {
+  color: #115779;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.bookNowBtn,
+.selectFlightBtn,
+.updateFlightBtn {
+  border: none;
+  height: 50px;
+  padding: 0 15px;
+}
+.bookNowBtn:hover,
+.selectFlightBtn:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
+  background-color: transparent !important;
+  border: 1px solid #115779;
+  color: #115779;
+}
+.departTime,
+.arriveTime {
+  font-weight: 700;
+}
+.fa-plane-departure {
+  color: #115779;
+  font-size: 25px;
+}
+/* End of Flight View */
+
+/* Flight Search */
+.search-flight {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  padding: 50px 0;
+  margin: 0;
+}
+.search-form {
+  width: 100%;
+}
+.search-form .form-select {
+  height: 60px;
+}
+.search-form .form-control {
+  height: 60px;
+}
+.searchFlightBtn {
+  border: none;
+  background-color: #115779;
+  font-weight: 200;
+  height: 50px !important;
+  padding: 0 20px;
+}
+.searchFlightBtn:hover {
+  background: linear-gradient(135deg, #115779, #49a6e9);
+}
+.form-check-input {
+  border: 2px solid #115779;
+  background-color: white;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+}
+.form-check-input:active {
+  box-shadow: none;
+}
+.form-check-input:checked {
+  background-color: #fff;
+  border-color: #115779;
+  box-shadow: none;
+}
+.form-check-input:checked::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: #115779; /* Change the dot color */
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: none;
+}
+/* End of flight Search */
+
+/* Search Result */
+.searchResultWrapper {
+  padding: 10px 0;
+  margin: 10px 0;
+  border-radius: 8px;
+  background-color: #fff;
+}
+.searchResultCard {
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+  justify-content: center;
+  align-items: center;
+}
+.searchResultCard:hover {
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.flightCardFooter {
+  background-color: #115779;
+  color: white;
+  padding: 12px;
+}
+/* End of Search Result */
+
+/* Flight Details */
+.flightDetailsCard {
+  border: 1px dashed #115779;
+}
+.flightDetailsCard p {
+  font-size: 10px;
+}
+.airlineLogo {
+  width: fit-content;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fa-plane-up {
+  font-size: 50px;
+  color: #115779;
+}
+.fa-plane-container {
+  width: fit-content;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fa-plane {
+  font-size: 60px;
+  color: #1b709b;
+}
+.codeSeats {
+  background-color: #115779;
+  color: white;
+}
+.fa-circle-plus {
+  font-size: 30px;
+}
+/* End of Flight Details */
+
+/* Add Flight */
+.addFlightTitle,
+.updateFlightTitle {
+  color: #115779 !important;
+  font-weight: 600;
+}
+.addFlightBtn {
+  background-color: transparent !important;
+  border: none !important;
+  color: #115779 !important;
+  background-color: #1b709b;
+}
+.addFlightForm .form-label,
+.updateFlight-form .form-label {
+  margin: 0;
+  color: #1b709b !important;
+}
+.addFlightForm .form-control,
+.updateFlight-form .form-control {
+  margin-bottom: 12px;
+}
+/* End of Add flight */
+.profileName:hover {
+  cursor: pointer;
+}
